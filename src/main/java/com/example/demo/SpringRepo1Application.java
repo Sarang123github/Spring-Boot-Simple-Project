@@ -26,17 +26,10 @@ public class SpringRepo1Application {
     		
 //                 Save All    		
 		
-    		Employee emp2=new Employee("Tushar", "Mumbai");
-    		Employee emp3=new Employee("Jay", "Delhi");
-    		Employee emp4=new Employee("Shantanu", "Yavatmal");
     		
-    		List <Employee> list=new ArrayList<>();
-    	
-    		list.add(emp2);
-    		list.add(emp3);
-    		list.add(emp4);
-    		
-		   bean.saveAllEmp(list);
+    		List<Employee> emps = List.of(new Employee("Sarang", "Yavatmal"),new Employee("Sagar", "Nagpur"),new Employee("Tushar", "Pune"));
+		   bean.saveAllEmp(emps);
+		
 		
 //		           Get Employee By Id
 		
@@ -52,11 +45,11 @@ public class SpringRepo1Application {
 		 
 //                Delet Employe by ID
 		 
-		     bean.deletEmpById(1);
+//		     bean.deletEmpById(1);
 		  
 //                update by id 
 		     
-		     bean.updateEmpById(2, "Vishal");
+		     bean.updateEmpById(10, "Vishal");
 		  
 		 
 		 
